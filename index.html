@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Animate CSS -->
+	<link rel="stylesheet" href="css/animate.min.css">
+	<!-- Toasty CSS -->
+	<link rel="stylesheet" href="css/toasty.css">
+
+    <title>ComixZone shop</title>
+  </head>
+  <body>
+  <div class="for_preload"><!--TRATATATA-->
+	<span class="svg"></span>
+	<span>Загружаем...</span>
+  </div>
+	<div class="page">
+	  <span onclick="shopcard_action();" class="shop_card">
+		<span class="shop_card_span">Корзина
+			<span class="how_many">
+				0
+			</span>
+		</span>
+		<i class="shop_open fa fa-shopping-cart fa-lg" aria-hidden="true"></i>
+	  </span>
+	  <span class="menu_toggle">
+		<span>Меню</span>
+		<i class="menu_open fa fa-bars fa-lg"></i>
+		<i class="menu_close fa fa-times fa-lg"></i>
+	  </span>
+	  <ul class="menu_items">
+		<li><a href="index.html"><i class="icon fa fa-home fa-2x"></i> Главная</a></li>
+		<li><a href="products.html"><i class="icon fa fa-gift fa-2x"></i> Продукты</a></li>
+		<li onclick="shopcard_action();"><a href="#"><i class="icon fa fa-shopping-cart fa-2x"></i> Корзина</a>
+			<span class="how_many_menu">
+				0
+			</span>
+		</li>
+	  </ul>
+	  <main class="content">
+		<div class="content_inner">
+			<header>
+				<div class="logo">
+					<img src="img/logo.png" alt="ComixZone shop">
+				</div>
+				<div class="search">
+					<input type="text" class="search_input" placeholder="Ищешь что то?">
+					<button onclick="alert('ok');"></button>
+				</div>
+			</header>
+			<section>
+				 <h1 class="main_text">Пожалуй лучшее что может быть</h1>
+				 <article class="comic">
+				  <div class="panel" style="background-image:url(img/tovar_hulk.jpg);">
+					<p class="text top-left">Серьезно..</p>
+					<p class="text bottom-right">...а это у нас халк</p>
+				  </div>
+				  <div class="panel" style="background-image:url(img/tovar_book.jpg);">
+					<p class="text top-left">Если читаешь...</p>
+					<p class="text bottom-right">...неплохой выбор</p>
+				  </div>
+				  <div class="panel" style="background-image:url(img/tovar_cap.jpg);">
+					<p class="speech">Кепку нннада?</p>
+				  </div>
+				  <div class="panel">
+					<p class="text top-left">Смотри...</p>
+					<p class="text bottom-right">...эта штука имеет разные вещи</p>
+				  </div>
+				  <div class="panel"></div>
+				  <div class="panel"></div>
+				  <div class="panel"></div>
+				  <div class="panel"></div>
+				  <div class="panel">
+					<p class="text bottom-right">Загрузить еще...</p>
+				  </div>
+				</article>
+				<h2 class="second_text">Мы продаём тут совcем классные штуки</h2>
+			</section>
+			<section class="contact_form_wrapper">
+				<div class="contact_form">
+					<span>Обратная связь</span>
+					<input type="text" class="contact_form_input" placeholder="Ваше Имя">
+					<input type="text" class="contact_form_input" placeholder="Ваш E-email">
+					<textarea class="contact_form_textarea" placeholder="Сообщение" rows="5" cols="15" name="text"></textarea>
+					<button onclick="alert('ok');" class="contact_form_button"></button>
+				</div>
+			</section>
+			<footer>
+				<!-- <img class="footer_image" src="img/footer_img.png" alt="Big Bang"> -->
+				<p>Powered by <a href="#">ComixZone</a></p>
+				<img class="footer_image" src="img/cz.jpg" alt="cz">
+			</footer>
+			<div class="shop_overlay d-none">
+				<div class="shop_card_wrapper">
+					<span class="tab_name"></span>
+					<span onclick="shopcard_action();" class="close_shop_card"></span>
+					<div class="products_in_shop_card_wrapp">
+						<!-- <div class="if_prod_null"> -->
+							<!-- К сожалению ваша корзинка сейчас пуста -->
+						<!-- </div> -->
+						<div class="product">
+							<div style="background-image:url(img/shopcardimg.jpg);" class="prod_shop_card_img">
+							</div>
+							<div class="prod_shop_card_name">
+								Venom фигурка 
+							</div>
+							<div>
+								<span class="addeditembutton del">-</span>
+								<span>2шт</span>
+								<span class="addeditembutton add">+</span>
+							</div>
+							<div>
+								2700р
+							</div>
+							<div class="delete_item_shop">
+								<span id="delete_item_shop" onclick="alert('ok');">x</span>
+							</div>
+						</div>
+						<div class="product">
+							<div style="background-image:url(img/shopcardimg.jpg);" class="prod_shop_card_img">
+							</div>
+							<div class="prod_shop_card_name">
+								Venom фигурка 
+							</div>
+							<div>
+								<span class="addeditembutton del">-</span>
+								<span>2шт</span>
+								<span class="addeditembutton add">+</span>
+							</div>
+							<div>
+								2700р
+							</div>
+							<div class="delete_item_shop">
+								<span id="delete_item_shop" onclick="alert('ok');">x</span>
+							</div>
+						</div>
+						<div class="product">
+							<div style="background-image:url(img/shopcardimg.jpg);" class="prod_shop_card_img">
+							</div>
+							<div class="prod_shop_card_name">
+								Venom фигурка 
+							</div>
+							<div>
+								<span class="addeditembutton del">-</span>
+								<span>2шт</span>
+								<span class="addeditembutton add">+</span>
+							</div>
+							<div>
+								2700р
+							</div>
+							<div class="delete_item_shop">
+								<span id="delete_item_shop" onclick="alert('ok');">x</span>
+							</div>
+						</div>
+						<div class="product">
+							<div style="background-image:url(img/shopcardimg.jpg);" class="prod_shop_card_img">
+							</div>
+							<div class="prod_shop_card_name">
+								Venom фигурка 
+							</div>
+							<div>
+								<span class="addeditembutton del">-</span>
+								<span>2шт</span>
+								<span class="addeditembutton add">+</span>
+							</div>
+							<div>
+								2700р
+							</div>
+							<div class="delete_item_shop">
+								<span id="delete_item_shop" onclick="alert('ok');">x</span>
+							</div>
+						</div>
+						<div class="product">
+							<div style="background-image:url(img/shopcardimg.jpg);" class="prod_shop_card_img">
+							</div>
+							<div class="prod_shop_card_name">
+								Venom фигурка 
+							</div>
+							<div>
+								<span class="addeditembutton del">-</span>
+								<span>2шт</span>
+								<span class="addeditembutton add">+</span>
+							</div>
+							<div>
+								2700р
+							</div>
+							<div class="delete_item_shop">
+								<span id="delete_item_shop" onclick="alert('ok');">x</span>
+							</div>
+						</div>
+
+						
+						
+						<div class="shop_card_all_info_wrapper">
+							<div>Всего: <span>3</span></div>
+							<div>На сумму: <span>32000</span>р</div>
+						</div>
+						<button onclick="alert('ok')" class="but_button">Купить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	  </main>
+	</div>
+	
+	<!-- jQuery-->
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<!--[if lt IE 10]><script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script><![endif]-->
+	<!-- jQuery cookie-->
+	<script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<!-- jQuery toasty-->
+	<script type="text/javascript" src="js/jquery.toasty.js"></script>
+	<!-- Custom JavaScript -->
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
